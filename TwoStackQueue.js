@@ -1,14 +1,14 @@
 class TwoStackQueue{
     front = []
     back  = []
-    get length(){
+    get length() {
         return this.front.length + this.back.length;
     }
-    enqueue(x){
+    enqueue(x) {
         this.back.push(x);
     }
-    dequeue(){
-        if (this.front.length <= 0){
+    dequeue() {
+        if (this.front.length <= 0) {
             while (this.back.length > 0) {
                 this.front.push(this.back.pop());
             }
